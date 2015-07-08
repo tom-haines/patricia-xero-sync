@@ -1,0 +1,92 @@
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb" version="2.0">
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/BankTransaction.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='BankTransaction']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+	
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Tracking.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='TrackingCategory']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+	
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Payment.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='Payment']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/TaxRate.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='TaxRate']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Receipt.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='Receipt']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Employee.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='Employee']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/CreditNote.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='CreditNote']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/ExpenseClaim.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='ExpenseClaim']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Invoice.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='Invoice']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/ManualJournal.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='ManualJournal']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="file:/Users/thomas/experiments/XeroAPI-Schemas/v2.00/Account.xsd" node="/xsd:schema">
+		<jxb:bindings node="//xsd:complexType[@name='Account']">
+			<jxb:bindings node=".//xsd:attribute[@name='status']">
+				<jxb:property name="entityStatus"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	
+	
+</jxb:bindings>

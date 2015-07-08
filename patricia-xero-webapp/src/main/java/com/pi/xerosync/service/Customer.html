@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h4>Add Customer</h4>
+<br>
+
+<div class="row">
+    @ShowIf(hasMessage)
+    <div class="alert alert-warning">${message}</div>
+    <form class="form-horizontal" role="form" action="/customer" method="POST">
+        <div class="form-group">
+            <label for="inputCustomerNumber" class="col-sm-4 control-label">Customer Number</label>
+
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputCustomerNumber"
+                       name="customerNumber" placeholder="Customer Number">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputCustomerName" class="col-sm-4 control-label">Customer Name</label>
+
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="inputCustomerName"
+                       name="customerName" placeholder="Customer Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label"></label>
+
+            <div class="col-sm-6">
+                <button type="submit" class="btn btn-default">Save</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>

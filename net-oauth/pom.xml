@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.practice-insight</groupId>
+    <artifactId>patricia-xero-sync</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>  
+  <artifactId>oauth-core-parent</artifactId>  
+    <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>OAuth Core: Parent POM</name>
+  <modules>
+    <module>commons</module>
+    <module>consumer</module>
+    <module>httpclient4</module>
+  </modules>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>Net OAth is provided under the apache license (business-friendly OSS licence)</comments>
+    </license>
+  </licenses>
+  <build>
+    <defaultGoal>package</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>

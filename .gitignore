@@ -1,0 +1,11 @@
+.classpath
+.project
+.settings
+target
+.idea
+*.iml
+**/*.iml
+**/coverage-report
+.DS_Store
+**/.DS_Store
+**/atlassian-ide-plugin.xml

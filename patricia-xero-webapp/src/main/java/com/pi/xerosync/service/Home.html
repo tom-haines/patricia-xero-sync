@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h4>
+    Number of invoices to sync from Patricia to Xero: <span
+        id="remaining-count">${remainingCount}</span>
+</h4>
+
+@ShowIf(errorMessage != null)
+<h4>Error occurred. message=${errorMessage}</h4>
+
+@ShowIf(remainingCount > 0)
+<INPUT TYPE="button" value="Sync new Patricia invoices to Xero"
+       onClick="location.href='sync'">
+<br/>
+
+<h4>Log:</h4>
+<textarea id="log-box" style="width: 720px; height: 350px;"
+          readonly="readonly"></textarea>
+<script type="text/javascript">
+    function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for (var i = 0; i < 5; i++) {
+            text += possible.charAt(Math.floor(Math.random()
+                                                       * possible.length));
+        }
+        return text;
+    }
+    window.setInterval(function () {
+        var url = '${ContextPath}/log?id=' + makeid() + "&runId=${runId}"
+        console.log("logUrl=" + url)
+        $.get(url, function (data) {
+            var box = $("#log-box");
+            box.val(box.val() + data);
+            if (data) {
+                box.scrollTop(box[0].scrollHeight - box.height());
+            }
+        });
+    }, 500);
+
+    window.setInterval(function () {
+        var url = '${ContextPath}/remainingcount?id=' + makeid()
+        // window.alert("url=" + url)
+        $.get(url, function (data) {
+            $("#remaining-count").text(data + "");
+        });
+    }, 1000);
+</script>
+</body>
+</html>

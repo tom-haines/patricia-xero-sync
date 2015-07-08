@@ -1,0 +1,11 @@
+#log-box {
+	width: 720px;
+	max-width: 720px;
+	height: 350px;
+	margin-bottom: 15px;
+	background: black;
+	color: white;
+	padding: 10px;
+	font-family: Monaco;
+	font-size: 12px;
+}
